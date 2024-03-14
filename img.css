@@ -1,0 +1,26 @@
+.image-container {
+    margin: 5px;
+    padding: 50;
+    overflow: hidden;
+}
+
+.image-container {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollImages 100s linear infinite; /* Adjust timing here */
+}
+
+.image-container img {
+    display: inline-block;
+    width: 44vw; /* Adjust according to image width */
+    height: 65ch;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100vw * 2)); /* Adjust according to the number of images */
+    }
+}
